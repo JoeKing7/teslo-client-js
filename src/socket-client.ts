@@ -4,7 +4,7 @@ import { Manager, Socket } from "socket.io-client"
 let socket: Socket;
 
 export const connectToServer = (jwt: string) => {
-    const manager = new Manager('https://teslo-shop-api.onrender.com:3001/socket.io/socket.io.js', {
+    const manager = new Manager('https://teslo-shop-api.onrender.com/socket.io/socket.io.js', {
 
         extraHeaders: {
             authentication: jwt
